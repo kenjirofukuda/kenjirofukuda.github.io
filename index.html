@@ -1,28 +1,19 @@
 <html>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hage</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-</head>
+    <head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Hage</title>
+	<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    </head>
 
-<body>
-    <h1 class="text-b">It Works</h1>
+    <body>
+	<h1 class="font-bold font- ">It Works</h1>
+	<button class="border" onclick="alert('Iya Hagetenai')">Omae Hagedana</button>
+	<button class="border" onclick="appendDate()">Jikoku tuika</button>
 
-    <button value="Hage" onclick="alert('Iya Hagetenai')">Omae Hagedana</button>
-
-    <ul id="sample_list"></ul>
-</body>
-<script>
-    const sample_list = document.getElementById("sample_list")
-    if (sample_list !== null) {
-        ['AHO', 'BAKA', 'MANUKE'].forEach ( function (each) {
-            const item = document.createElement('li');
-            item.innerText = each
-            sample_list.appnedChild(item) 
-        });
-    }
-</script>
+	<ul id="sample_list"></ul>
+    </body>
+    <script src="/js/script.js"></script>
 
 </html>
