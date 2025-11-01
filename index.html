@@ -8,10 +8,21 @@
 </head>
 
 <body>
-    <h1>It Works</h1>
+    <h1 class="text-b">It Works</h1>
 
     <button value="Hage" onclick="alert('Iya Hagetenai')">Omae Hagedana</button>
 
+    <ul id="sample-list"></ul>
 </body>
+<script>
+    const sample_list = document.getElementById("sample_list")
+    if (sample_list !== null) {
+        const item = document.createElement('li');
+        ['AHO', 'BAKA', 'MANUKE'].forEach ( function (each) {
+            item.innerText = each
+            sample_list.appnedChild(item) 
+        });
+    }
+</script>
 
 </html>
