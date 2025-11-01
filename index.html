@@ -17,8 +17,8 @@
 <script>
     const sample_list = document.getElementById("sample_list")
     if (sample_list !== null) {
-        const item = document.createElement('li');
         ['AHO', 'BAKA', 'MANUKE'].forEach ( function (each) {
+            const item = document.createElement('li');
             item.innerText = each
             sample_list.appnedChild(item) 
         });
